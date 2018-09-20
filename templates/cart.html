@@ -13,14 +13,16 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            {% for melon in cart%}
+        
+        {% for melon in cart%}
+            <tr>
                 <td>{{melon.common_name}}</td>
                 <td>{{melon.count}}</td>
                 <td>{{melon.price}}</td>
                 <td>{{melon.total_price}}</td>
-            {% endfor %}
-        </tr>
+            </tr>
+        {% endfor %}
+        
         </tbody>
    
     </table>

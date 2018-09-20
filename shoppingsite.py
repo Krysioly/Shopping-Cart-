@@ -84,7 +84,8 @@ def show_shopping_cart():
         melon.count = value 
         melon.total_price = (melon.count*melon.price)
         total += melon.total_price
-        cart += [melon]
+        cart.append(melon)
+        
 
     return render_template("cart.html", cart= cart, total=total)
 
